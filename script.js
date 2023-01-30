@@ -1,5 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+
+//Button to clear Textarea.
 var clearBtn = document.querySelector("#clear");
 // Arrays including possible selections.
 var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -9,8 +11,11 @@ var symbols = ["!","@","#","$","%","^","&","*","(",")","_","+","=","-","~","'","
 var passwordArray = [];
 var SecuredPassword="";
 
+
+// function to clear password.
 function resetpassword() {
   document.getElementById("password").value='';
+  console.log("You have successfully cleared the password input.")
 }
 // Write password to the #password input
 function writePassword() { 
@@ -24,7 +29,10 @@ passwordText.value = password;
 
 // Add Eventlistener to generate button 
 generateBtn.addEventListener("click", writePassword);
+
+//Eventlistener to clear password.
 clearBtn.addEventListener("click", resetpassword);
+
 
 // Function to generate a password through a series of prompts.
 function generatePassword () {

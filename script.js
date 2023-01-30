@@ -53,7 +53,7 @@ function generatePassword () {
     console.log("lowercase declined.");
   }
 
-  var useuppercase = window.confirm("Would you like uppercase letters?");
+  var useuppercase = window.confirm("Would you like to include uppercase letters?");
   if (useuppercase) {
     console.log("uppercase confirmed");
   }else {
